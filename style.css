@@ -1,0 +1,24 @@
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+  }
+  
+  .fireplace {
+    width: 1200px;
+    height:591px;
+    background-color: black;
+    position: relative;
+  }
+  
+  .fire {
+    position: absolute;
+    /* left: 50%; */
+    bottom: 0;
+    /* transform: translateX(-50%); */
+    width: 100%;
+    height: 100%;
+    background-image: url(fire.webp);
+    background-size: cover;
+    animation: flicker 1s ease-in-out infinite;
+  }
